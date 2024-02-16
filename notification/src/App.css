@@ -1,0 +1,125 @@
+.app {
+  width: 100%;
+  height: 100vh;
+
+}
+
+.content{
+  width: 100%;
+  position: absolute;
+  top:5%;
+  /* transform: translate(-50%); */
+  text-align: center;
+  color: #fff;
+
+}
+
+.content>h1{
+  font-size: 70px;
+  margin-top:80px ;
+  text-transform: capitalize;
+}
+
+.content>p{
+ margin: 20px auto;
+ font-size: 30px;
+ font-weight: 100;
+ line-height: 25px;
+ text-transform: capitalize;
+
+}
+input{
+   height: 35px;
+  width: 525px;
+  border-radius: 1px;
+  padding: 0 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 300;
+ 
+  font-size: large;
+  /* border: solid; */
+  border-color: white;
+  border-radius: 25px;
+  color: #000;
+}
+button{
+  width: 200px;
+  padding:15px 0;
+  font-size: 85%;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+span{
+  background: #009688;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+transition: 0.5s;
+}
+
+.left>span{
+  width: 0%;
+  height: 100%;
+}
+.left:hover>span{
+  width: 100%;
+  height: 100%;
+}
+.bottom>span{
+  width: 100%;
+  height: 0%;
+}
+.bottom:hover>span{
+  width: 100%;
+  height: 100%;
+}
+
+button:hover{
+  border: none;
+}
+
+.notificationLeft{
+  z-index: 1;
+  position: fixed;
+  top: 120px;
+  left: 10px;
+  width: 300px;
+  
+}
+.notificationRight{
+  z-index: 1;
+  position: fixed;
+  top: 120px;
+  right: -100px;
+  width: 300px;
+  
+}
+.notificationTop{
+  z-index: 1;
+  position: fixed;
+  top: 20px;
+left: 43%;
+  width: 300px;
+  
+}
+.notificationBotton{
+  z-index: 1;
+  position: fixed;
+  bottom:  20px;
+  left: 43%;
+  width: 300px;
+  
+}
