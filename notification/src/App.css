@@ -4,32 +4,33 @@
 
 }
 
-.content{
+.content {
   width: 100%;
   position: absolute;
-  top:5%;
-  /* transform: translate(-50%); */
+  top: 5%;
+  transform: translate(0%);
   text-align: center;
   color: #fff;
 
 }
 
-.content>h1{
+.content>h1 {
   font-size: 70px;
-  margin-top:80px ;
+  margin-top: 80px;
   text-transform: capitalize;
 }
 
-.content>p{
- margin: 20px auto;
- font-size: 30px;
- font-weight: 100;
- line-height: 25px;
- text-transform: capitalize;
+.content>p {
+  margin: 20px auto;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 25px;
+  text-transform: capitalize;
 
 }
-input{
-   height: 35px;
+
+input {
+  height: 35px;
   width: 525px;
   border-radius: 1px;
   padding: 0 10px;
@@ -37,16 +38,17 @@ input{
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: 300;
- 
+
   font-size: large;
   /* border: solid; */
   border-color: white;
   border-radius: 25px;
   color: #000;
 }
-button{
+
+button {
   width: 200px;
-  padding:15px 0;
+  padding: 15px 0;
   font-size: 85%;
   text-align: center;
   margin: 20px 10px;
@@ -60,66 +62,96 @@ button{
   overflow: hidden;
   text-transform: capitalize;
 }
-span{
+
+span {
   background: #009688;
   border-radius: 25px;
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: -1;
-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.left>span{
+.left>span {
   width: 0%;
   height: 100%;
 }
-.left:hover>span{
+
+.left:hover>span {
   width: 100%;
   height: 100%;
 }
-.bottom>span{
+
+.bottom>span {
   width: 100%;
   height: 0%;
 }
-.bottom:hover>span{
+
+.bottom:hover>span {
   width: 100%;
   height: 100%;
 }
 
-button:hover{
+button:hover {
   border: none;
 }
 
-.notificationLeft{
+.topNotificationLeft {
   z-index: 1;
   position: fixed;
   top: 120px;
   left: 10px;
   width: 300px;
-  
+
 }
-.notificationRight{
+
+.topNotificationRight {
   z-index: 1;
   position: fixed;
   top: 120px;
-  right: -100px;
+  right: 40px;
   width: 300px;
-  
+
 }
-.notificationTop{
+
+.topNotificationTop {
   z-index: 1;
   position: fixed;
   top: 20px;
-left: 43%;
+  left: 43%;
   width: 300px;
-  
+
 }
-.notificationBotton{
+
+.topNotificationBotton {
   z-index: 1;
   position: fixed;
-  bottom:  20px;
+  bottom: 20px;
+
   left: 43%;
   width: 300px;
   
+
+}
+@media (max-width: 1700px) {
+  .topNotificationBotton,
+  .topNotificationTop{
+    position: fixed;
+    left: 40%;
+  }
+}
+@media (max-width: 1300px) {
+  .topNotificationBotton,
+  .topNotificationTop{
+    position: fixed;
+    left: 38%;
+  }
+}
+@media (max-width: 1000px) {
+  .topNotificationBotton,
+  .topNotificationTop{
+    position: fixed;
+    left: 35%;
+  }
 }

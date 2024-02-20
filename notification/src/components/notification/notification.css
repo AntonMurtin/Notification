@@ -1,0 +1,192 @@
+
+.notificationItem {
+    position: relative;
+    z-index: 200;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.notificationTop {
+    animation: TopSlide 0.5s;
+    animation-fill-mode:both;
+}
+
+@keyframes TopSlide {
+    0% {
+        margin-top: -100%;
+    }
+
+    100% {
+        margin-top: 1%;
+    }
+}
+
+.notificationBotton {
+    animation: SlideBoton 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes SlideBoton {
+    0% {
+        margin-bottom: -10%;
+    }
+
+    100% {
+        margin-top: 120%;
+    }
+}
+
+.notificationLeft {
+    animation: Slideleft 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Slideleft {
+    0% {
+        margin-right: 120%;
+    }
+
+    100% {
+        margin-right: 0%;
+    }
+}
+
+.notificationRight {
+    animation: RightSlide 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes RightSlide {
+    0% {
+        margin-left: 120%;
+    }
+
+    100% {
+        margin-right: 0%;
+    }
+}
+
+/* @keyframes Slideleft {
+    0% {
+        margin-left: 120%;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
+}
+
+@keyframes SlideRight {
+    0% {
+        margin-left: 0%;
+    }
+
+    100% {
+        margin-left: 120%;
+    }
+} */
+
+.notificationBtn {
+  
+    position: absolute;
+    cursor: pointer;
+    font-size: 20px;
+    top: -20px;
+    right: 5px;
+    color: red;
+}
+
+.notificationMesage {
+    margin: 0;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.notificationItem .bar {
+    height: 15px;
+
+}
+
+.notificationItem.info .bar {
+
+    background-color: blue;
+}
+
+.notificationItem.success .bar {
+
+    background-color: green;
+}
+
+.notificationItem.warning .bar {
+
+    background-color: orange;
+}
+
+.notificationItem.error .bar {
+
+    background-color: red;
+}
+
+.exitTop {
+    animation: BottonSlide 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes BottonSlide {
+    0% {
+        margin-top: 1%;
+    }
+
+    100% {
+        margin-top: -100%;
+    }
+}
+
+.exitBotton {
+    animation: SlideTop 0.5s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes SlideTop {
+    0% {
+        margin-bottom: 1%;
+    }
+
+    100% {
+        margin-bottom: -120%;
+    }
+}
+
+.exitLeft {
+    animation: SlideRight 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes SlideRight {
+    0% {
+        margin-left: 0%;
+    }
+
+    100% {
+        margin-left: -120%;
+    }
+}
+
+.exitRight {
+    animation: LeftSlide 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes LeftSlide {
+    0% {
+        margin-left: 0%;
+    }
+
+    100% {
+        margin-left: 120%;
+    }
+}
